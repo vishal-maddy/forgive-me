@@ -1,0 +1,71 @@
+@import './animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+/* Custom cute scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E879A9;
+  border-radius: 9999px;
+  border: 2px solid #FFF8F0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF80B5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8F0;
+  color: #4A2838;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+/* Notebook lined paper pattern with soft watermark */
+.lined-paper {
+  background-color: #FFFDF9;
+  background-image: 
+    linear-gradient(#f3dbe8 1px, transparent 1px);
+  background-size: 100% 32px;
+  line-height: 32px;
+}
+
+/* Authentic washi tape with deckled edges & soft opacity */
+.washi-tape {
+  background: linear-gradient(135deg, rgba(255, 214, 231, 0.9), rgba(255, 182, 210, 0.85));
+  box-shadow: 0 2px 6px rgba(180, 50, 90, 0.12);
+  border-left: 2px dashed rgba(255, 255, 255, 0.6);
+  border-right: 2px dashed rgba(255, 255, 255, 0.6);
+  transform: rotate(-2deg);
+}
+
+.washi-tape-alt {
+  background: linear-gradient(135deg, rgba(233, 213, 255, 0.9), rgba(210, 180, 250, 0.85));
+  box-shadow: 0 2px 6px rgba(130, 80, 180, 0.12);
+  border-left: 2px dashed rgba(255, 255, 255, 0.6);
+  border-right: 2px dashed rgba(255, 255, 255, 0.6);
+  transform: rotate(2deg);
+}
+
+/* Ambient layered background orbs */
+.bg-ambient-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
